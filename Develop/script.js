@@ -10,6 +10,7 @@ var passwordLength = function() {
       if (length < 8 || length > 128) {
         alert("Not a valid option. Please try again.")
         passwordLength();
+        return length;
       } else {
         console.log(length);  
         return length;
